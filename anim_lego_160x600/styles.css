@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+:root {
+  --main-bg-color: #ffd236;
+} 
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 600px;
+  width: 160px;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: var(--main-bg-color)
+}
+
+/* // intro  */
+
+.title_text{
+  top: 240px;
+  right: 20px;
+  line-height: 27px;
+  position: absolute;
+  text-align: right;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ff0000;
+  font-size: 1.3rem;
+  width: 200px;
+
+}
+
+.bold {
+  color: #0066bf;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#data {
+  color: #0066bf;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.job_titles{
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  text-align: right;
+  line-height: 27px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #0066bf;
+  width: 130px;
+  font-size: 1.3rem;
+  /* border: 1px solid black; */
+}
+
+.text_mask1{
+  position: absolute;
+  right: 20px;
+  top: 293px;
+  height: 27px;
+  width: 130px;
+  overflow: hidden;
+  /* border: 1px solid green; */
+}
+
+.nations{
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  text-align: right;
+  line-height: 27px;
+  font-weight: 300;
+  width: 130px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ff0000;
+  font-size: 1.3rem;
+  /* border: 1px solid blue; */
+}
+
+.text_mask2{
+  position: absolute;
+  right: 20px;
+  top: 347px;
+  width: 200px;
+  height: 27px;
+  width: 130px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 610px;
+} 
+
+
+
+
+

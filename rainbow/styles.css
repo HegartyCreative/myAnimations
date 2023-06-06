@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+:root {
+  --main-bg-color: #ffbb54;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: rgb(247, 230, 185);
+}
+
+/* Intro */
+
+h1{
+  position: absolute;
+  left: 55px;
+  top: 180px;
+  color: #f57c00;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+/* Address */
+
+.title{
+  color: var(--main-bg-color);
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.title1{
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  color: #ef5350;
+  font-weight: 500;
+}
+
+.title2{
+  position: absolute;
+  left: 20px;
+  top: 85px;
+  color: #f57c00;
+  font-weight: 500;
+}
+
+.title3{
+  position: absolute;
+  left: 20px;
+  top: 110px;
+  color: #66bb6a;
+  font-weight: 500;
+}
+
+.title4{
+  position: absolute;
+  left: 20px;
+  top: 135px;
+  color: #42a5f5;
+  font-weight: 500;
+}
+
+#sun_large{
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: 300px;
+  height: 250px;
+}
+
+/* Building */
+
+
+.building{
+  top: 0;
+  left: 0px;
+  width: 376px;
+  height: 250px;
+  position: absolute;
+  z-index: 20;
+}
+
+.size{
+  background-color: rgb(247, 230, 185);
+  position: absolute;
+  left: 120px;
+  top: 150px;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  z-index: 30;
+  font-size: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.size_title{
+  color: #ef5350;
+  font-weight: 500;
+}
+
+.size_amount{
+  color: #66bb6a;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.size_amount span{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.size_date{
+  color: #42a5f5;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+/* Basket */
+
+.amenities, .trains, .vinyls, .end{
+  color: #f57c00;
+  font-size: 1rem;
+  position: absolute;
+  font-weight: 500;
+}
+
+.amenities1{
+  left: 84px;
+  top: 13px;
+  font-weight: 500;
+}
+
+.amenities2{
+  left: 42px;
+  top: 218px;
+  font-weight: 500;
+}
+
+#basket {
+  clip-path: url(#myMask);
+  z-index: 40;
+}
+
+/* Trains */
+
+.trains1{
+  left: 86px;
+  top: 13px;
+  font-weight: 500;
+}
+
+.trains2{
+  left: 30px;
+  top: 218px;
+  font-weight: 500;
+}
+
+#train_section{
+  clip-path: url(#myMask);
+  z-index: 40;
+}
+
+/* Vinyl */
+
+.vinyl1{
+  left: 54px;
+  top: 13px;
+  font-weight: 500;
+}
+
+.vinyl2{
+  left: 37px;
+  top: 218px;
+  font-weight: 500;
+}
+
+#vinyl{
+  clip-path: url(#myMask);
+  z-index: 40;
+}
+
+/* End */
+
+.end1{
+  left: 70px;
+  top: 250px;
+  font-weight: 500;
+}
+
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

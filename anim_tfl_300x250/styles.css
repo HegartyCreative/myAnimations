@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+:root {
+  --background: rgb(7, 7, 65);
+  --tfl_red: #ffffff;
+  --train-color: #ffffff;
+  --bus-color: #ffffff;
+  --boat-color: #ffffff;
+  --taxi-color: #ffffff;
+  --bike-color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: var(--background);
+}
+
+.start_logo {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+}
+
+#london {
+  position: absolute;
+  height: 250px;
+  width: 560px;
+  top: 0;
+  left: 0;
+}
+
+#tfl_logo {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+}
+
+#transport_graphics {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+}
+
+h2 {
+  z-index: 10;
+  position: absolute;
+  top: 200px;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+h1 {
+  z-index: 10;
+  position: absolute;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  padding: 6px;
+}
+
+h1.welcome_heading1 {
+  top: 35px;
+  left: 69px;
+}
+
+h1.welcome_heading2 {
+  top: 70px;
+  left: 123px;
+  z-index: 20;
+}
+
+h1.welcome_heading3 {
+  top: 105px;
+  left: 82px;
+}
+
+.text_body {
+  z-index: 20;
+  position: absolute;
+  font-size: 0.95rem;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  color: white;
+  padding: 6px;
+}
+
+.text1 {
+  top: 15px;
+  left: 20px;
+  right: 30px;
+}
+
+.text2 {
+  top: 85px;
+  left: 20px;
+  right: 15px;
+}
+
+.text3 {
+  top: 15px;
+  left: 20px;
+  right: 30px;
+}
+
+.text4 {
+  top: 85px;
+  left: 20px;
+  right: 15px;
+}
+
+#logo {
+  clip-path: url(#mask_top);
+}
+
+#logo_tagline {
+  clip-path: url(#mask_bottom);
+}
+
+/* Train */
+
+.train_text {
+  left: 124px;
+  color: var(--train-color);
+}
+
+#train {
+  clip-path: url(#mask);
+}
+
+/* Bus */
+
+.bus_text {
+  left: 130px;
+  color: var(--bus-color);
+}
+
+#bus {
+  clip-path: url(#mask);
+}
+
+/* Boat */
+
+.boat_text {
+  left: 126px;
+  color: var(--boat-color);
+}
+
+#boat {
+  clip-path: url(#mask);
+}
+
+/* Taxi */
+
+.taxi_text {
+  left: 128px;
+  color: var(--taxi-color);
+}
+
+#taxi {
+  clip-path: url(#mask);
+}
+
+/* Bike */
+
+.bike_text {
+  left: 128px;
+  color: var(--bike-color);
+}
+
+#bike {
+  clip-path: url(#mask);
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

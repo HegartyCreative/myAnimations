@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <g id="Layer_1" data-name="Layer 1">
+    <rect width="300" height="250" style="fill: none;"/>
+  </g>
+  <g id="bottom">
+    <path d="m205.17,250v-65.57h-.01c-.2,30.67-24.82,55.47-55.16,55.47s-54.96-24.8-55.16-55.47h-.01v65.57h110.35Z" style="fill: #fff;"/>
+    <path d="m205.17,184.43c0,31.38-24.7,56.82-55.17,56.82s-55.17-25.44-55.17-56.82" style="fill: none; stroke: #007ddf; stroke-miterlimit: 10; stroke-width: 3.04px;"/>
+  </g>
+</svg>

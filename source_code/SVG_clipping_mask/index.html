@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+    <meta name="ad.size" content="width=300,height=250" />
+    <meta name="viewport" content="user-scalable=yes, width=300" />
+    <title>SVG clipping mask</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <svg width="300" height="250" viewBox="0 0 300 250">
+        <defs>
+          <clipPath id="mask">
+            <circle cx="98.67" cy="125.58" r="62.93" fill="#ff5c5c"/>
+          </clipPath>
+    </defs>
+        <g id="background">
+          <circle cx="98.67" cy="125.58" r="62.93" fill="#ff5c5c"/>
+        </g>
+        <g id="music">
+          <path d="m258.4,90.64c0-1.33-1.07-2.4-2.4-2.4h-44.65c-1.33,0-2.4,1.07-2.4,2.4v2c0,.07-.02.13-.02.19v51.35c-3.14-1.81-7.7-2.03-12.1-.23-6.55,2.69-10.24,8.83-8.24,13.72,2.01,4.89,8.94,6.68,15.5,3.99,5.1-2.09,8.45-6.28,8.75-10.34.05-.18.09-.36.09-.56v-50.1h41.5v43.49c-3.14-1.79-7.68-2.01-12.07-.21-6.55,2.69-10.24,8.83-8.24,13.72,2.01,4.89,8.94,6.68,15.5,3.99,5.15-2.11,8.52-6.37,8.76-10.46.03-.14.05-.28.05-.43v-57.94c0-.07-.01-.14-.02-.22v-1.98Z"/>
+        </g>
+      </svg>
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.1_min.js"></script>
+    <script src="script.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

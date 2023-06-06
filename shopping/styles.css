@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+*[x-apple-data-detectors],  /* iOS */
+    .x-gmail-data-detectors,    /* Gmail */
+    .x-gmail-data-detectors *,
+    .aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.background {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.start {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 1;
+}
+
+.handbags {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.day {
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  top: 15px;
+  left: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding-top: 100px;
+}
+
+.monday {
+  z-index: 30;
+  background-color: rgb(218, 218, 218);
+  color: black;
+}
+
+.tuesday {
+  z-index: 25;
+  background-color: rgb(178, 178, 178);
+  color: black;
+}
+
+.wednesday {
+  z-index: 20;
+  background-color: rgb(135, 135, 135);
+  color: black;
+}
+
+.thursday {
+  z-index: 15;
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
+
+.friday {
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+
+.set {
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  top: 3px;
+  left: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-top: 60px;
+  color: #ffc300;
+  z-index: 100;
+  opacity: 0;
+}
+
+.date {
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  top: 0px;
+  left: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-top: 170px;
+  color: #ffc300;
+  z-index: 100;
+  opacity: 0;
+}
+
+.black {
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  top: 15px;
+  left: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding-top: 68px;
+  z-index: 100;
+  color: white;
+  opacity: 0;
+}
+
+/* Button code */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

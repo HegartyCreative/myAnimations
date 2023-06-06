@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+
+*[x-apple-data-detectors],  /* iOS */
+    .x-gmail-data-detectors,    /* Gmail */
+    .x-gmail-data-detectors *,
+    .aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.background {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.main_logo {
+  position: absolute;
+  left: 22px;
+  top: 90px;
+  height: 50px;
+  z-index: 15;
+  opacity: 1;
+}
+
+.start {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  background-color: #f2cdac;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.intro {
+  height: 250px;
+  width: 300px;
+  background-color: #d2e8e3;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.supporting {
+  position: absolute;
+  left: 42px;
+  top: 35px;
+  width: 70%;
+  z-index: 20;
+}
+
+.healthy {
+  position: absolute;
+  left: 29px;
+  top: 80px;
+  width: 80%;
+  z-index: 20;
+}
+
+.diets {
+  position: absolute;
+  left: 150px;
+  top: 145px;
+  width: 40%;
+  z-index: 20;
+}
+
+.cherry {
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  width: 12%;
+  z-index: 20;
+}
+
+.grapes {
+  position: absolute;
+  left: 46px;
+  top: 175px;
+  width: 12%;
+  z-index: 20;
+}
+
+.pear {
+  position: absolute;
+  left: 80px;
+  top: 202px;
+  width: 11%;
+  z-index: 20;
+}
+
+.logo {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 33%;
+  z-index: 30;
+  opacity: 0;
+}
+
+/* ONE */
+
+.left1 {
+  background-color: #ffed50;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+}
+
+.right1 {
+  background-color: #ff3f29;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  z-index: 0;
+  z-index: 5;
+}
+
+.apple_left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.pineapple_right {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+/* TWO */
+
+.left2 {
+  background-color: lightgreen;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+}
+
+.right2 {
+  background-color: pink;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  z-index: 0;
+  z-index: 5;
+}
+
+.pomegranate_left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.lime_right {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+/* THREE */
+
+.left3 {
+  background-color: lightskyblue;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+}
+
+.right3 {
+  background-color: orange;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  z-index: 0;
+  z-index: 5;
+}
+
+.passionFruit_left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.orange_right {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+/* //////////// :end */
+
+.endText1 {
+  font-size: 2.6rem;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  z-index: 200;
+  color: #71a882;
+}
+
+.endText2 {
+  font-size: 2rem;
+  position: absolute;
+  top: 84px;
+  left: 10px;
+  z-index: 200;
+  color: #ff3f29;
+}
+
+.banana {
+  position: absolute;
+  left: 100px;
+  top: 190px;
+  width: 20%;
+  z-index: 20;
+}
+.peach {
+  position: absolute;
+  left: 162px;
+  top: 150px;
+  width: 15%;
+  z-index: 20;
+}
+
+.strawberry {
+  position: absolute;
+  left: 210px;
+  top: 184px;
+  width: 14%;
+  z-index: 20;
+}
+
+/* Button code */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

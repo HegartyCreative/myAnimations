@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  background: #1d1d1d;
+}

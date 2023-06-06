@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
+*[x-apple-data-detectors],  /* iOS */
+    .x-gmail-data-detectors,    /* Gmail */
+    .x-gmail-data-detectors *,
+    .aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.container {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: white;
+  font-family: "Gloock", serif;
+  font-weight: normal;
+  z-index: 100;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+}
+
+h1 span {
+  color: #4e9dc5;
+}
+
+p {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  color: white;
+  font-family: "Gloock", serif;
+  font-weight: normal;
+  z-index: 100;
+  font-size: 0.75rem;
+  line-height: 0.95rem;
+  letter-spacing: 0.03rem;
+}
+
+.body_text {
+  opacity: 0;
+}
+
+.logo {
+  top: 10px;
+  left: 220px;
+  position: absolute;
+  width: 20%;
+}
+
+.cta {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  color: #4e9dc5;
+  font-family: "Gloock", serif;
+  font-weight: normal;
+  z-index: 100;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cta2 {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  color: #4e9dc5;
+  font-family: "Gloock", serif;
+  font-weight: normal;
+  z-index: 300;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.circle {
+  position: absolute;
+  background-color: white;
+  width: 190px;
+  height: 190px;
+  top: 80px;
+  left: 150px;
+  border-radius: 50%;
+  z-index: 50;
+}
+
+/* one */
+
+.one_text {
+  top: 210px;
+  left: 194px;
+  color: #4e9dc5;
+  position: absolute;
+  text-align: left;
+}
+
+.one {
+  top: 60px;
+  left: 170px;
+  position: absolute;
+  width: 50%;
+  z-index: 100;
+}
+
+/* two */
+
+.two_text {
+  top: 210px;
+  left: 191px;
+  color: #4e9dc5;
+  position: absolute;
+  text-align: left;
+}
+
+.two {
+  top: 70px;
+  left: 155px;
+  position: absolute;
+  width: 48%;
+  z-index: 100;
+}
+
+/* three */
+
+.three_text {
+  top: 210px;
+  left: 198px;
+  color: #4e9dc5;
+  position: absolute;
+  text-align: left;
+}
+
+.three {
+  top: 65px;
+  left: 176px;
+  position: absolute;
+  width: 33%;
+  z-index: 100;
+}
+
+/* four */
+
+.four_text {
+  top: 165px;
+  left: 160px;
+  color: #4e9dc5;
+  position: absolute;
+  text-align: left;
+}
+
+.four {
+  top: 50px;
+  left: 185px;
+  position: absolute;
+  width: 30%;
+  z-index: 100;
+}
+
+/* five */
+
+.five_text {
+  top: 210px;
+  left: 190px;
+  color: #4e9dc5;
+  position: absolute;
+  text-align: left;
+}
+
+.five {
+  top: 68px;
+  left: 145px;
+  position: absolute;
+  width: 57%;
+  z-index: 100;
+}
+
+/* Button code */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

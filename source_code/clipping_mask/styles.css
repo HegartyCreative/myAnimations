@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap");
+
+.clipped {
+  clip-path: url("#circle");
+}
+
+.container {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin: 100px;
+  border: 1px solid lightgrey;
+}

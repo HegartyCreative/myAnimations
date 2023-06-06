@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+*[x-apple-data-detectors],  /* iOS */
+    .x-gmail-data-detectors,    /* Gmail */
+    .x-gmail-data-detectors *,
+    .aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  font-weight: normal;
+}
+
+.background {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #333;
+  background-color: rgb(255, 255, 0);
+}
+
+.cyclist {
+  position: absolute;
+  top: 140px;
+  left: 106px;
+  height: 75px;
+  z-index: 10;
+}
+
+.left_shape {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 50;
+  opacity: 0;
+}
+
+.right_shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  z-index: 50;
+  opacity: 0;
+}
+
+.logo {
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+  left: 30px;
+}
+
+.logo1 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
+  z-index: 100;
+  width: 60px;
+}
+
+.location {
+  color: rgb(255, 255, 0);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 1.9rem;
+  z-index: 200;
+  font-weight: normal;
+}
+
+.date {
+  color: rgb(255, 255, 0);
+  position: absolute;
+  top: 75px;
+  left: 14px;
+  z-index: 10;
+  opacity: 0;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.year_background {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  background-color: black;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.figure {
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  position: absolute;
+  font-weight: normal;
+}
+
+/* RIDERS */
+
+#riders {
+  font-size: 6rem;
+  position: absolute;
+  top: 37px;
+  left: 30px;
+  opacity: 0;
+}
+
+.riders {
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+/* TEAMS */
+
+#teams {
+  font-size: 6rem;
+  position: absolute;
+  top: 37px;
+  left: 30px;
+  opacity: 0;
+}
+
+.teams {
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  position: absolute;
+  font-size: 1.6rem;
+  opacity: 0;
+  font-weight: normal;
+}
+
+.cyclists {
+  position: absolute;
+  top: 160px;
+  left: 170px;
+  height: 105px;
+  z-index: 10;
+}
+
+/* STAGES */
+
+#stages {
+  font-size: 6rem;
+  position: absolute;
+  top: 37px;
+  left: 30px;
+  opacity: 0;
+}
+
+.stages {
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  position: absolute;
+  font-size: 1.6rem;
+  opacity: 0;
+  font-weight: normal;
+}
+
+.stage {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 60px;
+  z-index: 10;
+}
+
+/* KMs */
+
+#kms {
+  font-size: 4rem;
+  position: absolute;
+  top: 68px;
+  left: 30px;
+  opacity: 0;
+}
+
+.kms {
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  position: absolute;
+  font-size: 1.6rem;
+  opacity: 0;
+  font-weight: normal;
+}
+
+.km {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 70px;
+  z-index: 10;
+}
+
+/* Longest */
+
+#longests {
+  font-size: 4rem;
+  position: absolute;
+  top: 68px;
+  left: 30px;
+  opacity: 0;
+}
+
+.longests {
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  position: absolute;
+  font-size: 1.6rem;
+  opacity: 0;
+  font-weight: normal;
+}
+
+.longest {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 70px;
+  z-index: 10;
+}
+
+/* Button code */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

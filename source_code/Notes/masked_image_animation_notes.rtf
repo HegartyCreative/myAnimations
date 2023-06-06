@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+We have the def tag holding the clipPath which holds the mask.\
+The clipPath has the id of \'91mask\'92 and the rect/path/circle has the id of \'91target\'92\
+And we have the g tag holding the image. In the image tag we have the id of \'91firstImage\'92\
+\
+In the CSS file we have the clipping instruction:\
+\
+#[image id]firstImage\{\
+Clip-path: url([defs clipPath id]mask)\
+\}\
+\
+In the JS file, we have the animation instruction:\
+This uses the id of target. This will animate the mask\
+\
+Finally, always good to have an id for the entire SVG.\
+You can use this to hide/move the animation at the end of it\'92s use.\
+\
+Check out the Digital Zone animation.}

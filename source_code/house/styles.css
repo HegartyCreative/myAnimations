@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.circle {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 450px;
+  left: 200px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 35px;
+  color: white;
+}

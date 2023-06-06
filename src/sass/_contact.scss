@@ -1,0 +1,42 @@
+.contact_details{
+	margin-top: 25px;
+}
+
+.contact_details p{
+	border: 1px solid $primary-color;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	text-transform: uppercase;
+	color: $primary-color;
+}
+
+.contact_details a{
+	color: white !important;
+}
+
+.footer{
+	padding-bottom: 50px;
+}
+
+.footer p{
+	color: grey;
+	text-align: center;
+}
+
+#contact h2{
+	margin-bottom: 15px;
+}
+
+.tel p{
+	border: 1px solid $primary-color;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	text-transform: uppercase;
+	color: $primary-color;
+}
+
+.line, .custom-bullet{
+	padding-top: 0;
+}

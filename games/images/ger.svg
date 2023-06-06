@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="148.97" height="86.74" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 148.97 86.74">
+  <defs>
+    <linearGradient id="linear-gradient" x1="73.91" y1="2.69" x2="73.91" y2="33.83" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <g style="isolation: isolate;">
+    <g id="Layer_2" data-name="Layer 2">
+      <g>
+        <g>
+          <path d="m74.27.41c-18.97,0-35.09,12.01-41.02,28.76h82.03C109.35,12.43,93.24.41,74.27.41Z"/>
+          <path d="m74.27,86.28c18.73,0,34.69-11.71,40.79-28.12H33.47c6.11,16.41,22.07,28.12,40.8,28.12Z" style="fill: #fecd17;"/>
+          <path d="m33.47,58.16h81.59c1.72-4.62,2.66-9.61,2.66-14.81s-.87-9.74-2.43-14.18H33.25c-1.57,4.44-2.44,9.21-2.44,14.18s.94,10.19,2.66,14.81Z" style="fill: #dc0201;"/>
+        </g>
+        <path d="m101.72,18.26c0,8.6-12.45,15.57-27.81,15.57s-27.81-6.97-27.81-15.57,12.45-15.57,27.81-15.57,27.81,6.97,27.81,15.57Z" style="fill: url(#linear-gradient); mix-blend-mode: screen; opacity: .72;"/>
+      </g>
+    </g>
+  </g>
+</svg>

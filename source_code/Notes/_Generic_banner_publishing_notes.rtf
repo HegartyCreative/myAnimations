@@ -1,0 +1,149 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red72\green169\blue181;\red0\green0\blue0;\red155\green163\blue178;
+\red135\green185\blue102;\red155\green162\blue177;\red255\green255\blue255;\red72\green169\blue182;\red156\green163\blue178;
+\red135\green185\blue101;\red185\green94\blue214;\red82\green159\blue236;\red197\green136\blue83;\red74\green80\blue93;
+\red156\green163\blue178;\red0\green0\blue0;\red255\green255\blue255;\red121\green213\blue255;\red25\green25\blue25;
+\red234\green89\blue101;\red185\green122\blue229;\red184\green230\blue123;\red234\green255\blue255;\red26\green118\blue43;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c33852\c71534\c76197;\cssrgb\c0\c0\c0;\cssrgb\c67166\c69917\c74931;
+\cssrgb\c59570\c76423\c47307;\cssrgb\c67059\c69804\c74902;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c33980\c71695\c76316;\cssrgb\c67273\c70030\c74960;
+\cssrgb\c59531\c76374\c47163;\cssrgb\c78072\c47498\c86989;\cssrgb\c38506\c69183\c94185;\cssrgb\c81842\c60205\c39608;\cssrgb\c36223\c38982\c43990;
+\cssrgb\c67379\c70142\c74989;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c53725\c86667\c100000;\cssrgb\c12941\c12941\c12941;
+\cssrgb\c94118\c44314\c47059;\cssrgb\c78039\c57255\c91765;\cssrgb\c76471\c90980\c55294;\cssrgb\c93333\c100000\c100000;\cssrgb\c9804\c52549\c22353;
+\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 File - Publish\
+\
+HTML, JS and images\
+Google is simple.\
+Other is more complex.\
+\
+Use the templates from the ad companies.\
+Use those as a basis to guide you.\
+\
+Clicktag or Click Through\
+Don\'92t include buttons which are hard-wired with links to external websites.\
+Lots of ad companies want you to include placeholder external links.\
+Create a layer at the top of your banners, create a rectangle covering the whole of your banner, convert to a button symbol, and ensure to give it an instance name.\
+Now you need to make it transparent. DO NOT MAKE IT AN ALPHA OF ZERO.\
+Double click to go into btn mode and move the keyframe into the \'91HIT\'92 state (the other states are empty).\
+The btn is then slightly transparent in Animate CC but the colour will not be visible when published.\
+How you add the actions to the btn layer. Ensure you add the action to the first keyframe of the banner.\
+Actions - HTML canvas - Actions - Go to webpage. This is the code you need to tweak according to the ad network:\
+\
+\
+this.btn_click_through.addEventListener("click", fl_ClickToGoToWebPage);\
+\
+function fl_ClickToGoToWebPage() \{\
+	window.open("http://www.adobe.com", "_blank");\
+\}\
+\
+For GOOGLE double click, you need to amend the text as below;\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 this.btn_click_through.addEventListener("click", fl_ClickToGoToWebPage);\
+\
+function fl_ClickToGoToWebPage() \{\
+	window.open(window.clickTag);\
+\}\
+\
+After inserting the click code, publish the banner but DO NOT include the .fla file.\
+Just the html, JS and images.\
+\
+You then need to go into the HTML file.\
+For Google, you need to add some text to the head of the html file. Check but see below:\
+\
+<script type=\'93text/javascript\'94>\
+Var clickTag = \'93http://www.google.com\'94;\
+</script>\
+\
+This can go at the bottom of the head code, before the body code starts.\
+But within the closing head file.\
+\
+For SIZMEK, you still need the button as above and then Sizmek provides code snippets you copy into your file.\
+\
+In the head tag: \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+<\cf4 script type\cf2 =\cf5 "text/javascript"\cf4  src\cf2 =\cf5 "https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"\cf2 ></\cf4 script\cf2 >
+\f1\fs30 \cf6 \cb1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+In the code as close as possible to the opening of the body tag:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb7 \expnd0\expndtw0\kerning0
+<script type="text/javascript">\
+	function checkInit() \{\
+		if (!EB.isInitialized()) \{\
+			EB.addEventListener(EBG.EventName.EB_INITIALIZED, onInit); // This code checks whether the EB object is initialized, if the object is initialized, it launches the function "onInit", otherwise it registers to the "EB_INITIALIZED" event.\
+		\} else \{\
+			onInit()\
+		\}\
+	\}\
+ \
+	function onInit() \{\
+		// --- ATEN\'c7\'c3O ---\
+		// Insira aqui a fun\'e7\'e3o que inicializa a anima\'e7\'e3o\
+ \
+	\}\
+ \
+	window.onload = function()\{ checkInit(); \};\
+</script>\
+\
+In the html file you add the following:\
+\
+\cf16 \cb17 <\cf16 \cb17 div id\cf16 \cb17 =\cf16 \cb17 "banner"\cf16 \cb17  onclick\cf16 \cb17 =\cf16 \cb17 "EB.clickthrough();"\cf16 \cb17  style\cf16 \cb17 =\cf16 \cb17 "cursor:pointer;"\cf16 \cb17 ></\cf16 \cb17 div\cf16 \cb17 >\cf3 \cb7 \
+\
+BUT CHECK ONLINE FOR THE CODE NEEDED FOR SIZMEK. YOU WILL LIKELY BE ABLE TO IMPORT A TEMPLATE WHICH WILL BE EASIER.\
+\
+How Animate cc works with create.js\
+When publishing the .fla file, there is a create.js link in the html file. See below:\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1 \cf18 \cb19 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec18 <\cf20 \strokec20 script\cf18 \strokec18  \cf21 \strokec21 src\cf18 \strokec18 ="\cf22 \strokec22 https://code.createjs.com/1.0.0/createjs.min.js\cf18 \strokec18 "></\cf20 \strokec20 script\cf18 \strokec18 >\cf23 \cb1 \strokec23 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+Some of the ad networks will say this link increases your file size, please use our link to the create.js code instead.\
+So on the Google site, there is a link you should use. See below:\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs21 \cf24 \cb25 \expnd0\expndtw0\kerning0
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js"></script>
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+So use the above link for google ads.\
+This will not add to the final file size.\
+\
+HTML templates\
+We can make the amends as above to the animate published files but every time we publish the files, the above tweaks get overriden.\
+When publishing, you can unclick, \'91Overwrite HTML file on publish\'92.\
+But there is a better way.\
+You make the necessary teaks and then call the file \'93double click\'92 html template.\
+When publishing your banners going forward, you can go to publish settings, advanced and import the template you have created as a generic template for Google.\
+You can do this for each ad network.\
+Sizmek has very helpfully already created such a template. You just need to save that down on your local drive and then import the template into your banner.\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+}

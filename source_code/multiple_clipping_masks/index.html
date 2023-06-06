@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+    <meta name="ad.size" content="width=300,height=250" />
+    <meta name="viewport" content="user-scalable=yes, width=300" />
+    <title>Template</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+
+        <svg width="300" height="250" viewBox="0 0 300 250">
+          <defs>
+            <clipPath id="plane_mask">
+              <rect x="9.71" y="63.84" width="91.75" height="93.07" fill="#00f41b"/>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="lorry_mask">
+              <rect x="118.29" y="63.84" width="93.25" height="89.78" fill="#e800d2"/>
+            </clipPath>
+          </defs>
+          <g id="plane_border">
+            <g>
+              <rect x="8.21" y="63.67" width="93.24" height="93.25" fill="#fff"/>
+              <polygon points="101.46 156.92 101.46 153.54 11.59 153.54 11.59 67.05 98.08 67.05 98.08 156.92 101.46 156.92 101.46 153.54 101.46 156.92 104.84 156.92 104.84 60.29 4.84 60.29 4.84 160.29 104.84 160.29 104.84 156.92 101.46 156.92"/>
+            </g>
+          </g>
+          <g id="plane">
+            <path d="m34.71,121.15l16.04-5.14c.47,6.23,1.48,15.02,1.56,15.96v.23l-7.24,7.4v6.15l9.73-4.52,9.81,4.52v-6.15l-7.24-7.4c.39-4.28.86-7.16,1.56-15.88v-.31l16.04,5.14,15.88,7.4v-6.93l-31.29-21.95c-.23-17.59-1.17-24.83-4.9-24.83-3.35,0-4.36,6.46-4.67,24.29v.54l-31.14,22.03v6.93l15.88-7.47Z"/>
+          </g>
+          <g id="lorry_border">
+            <g>
+              <rect x="118.29" y="63.76" width="93.25" height="93.24" fill="#fff"/>
+              <polygon points="211.54 157 211.54 153.63 121.67 153.63 121.67 67.13 208.16 67.13 208.16 157 211.54 157 211.54 153.63 211.54 157 214.92 157 214.92 60.38 114.92 60.38 114.92 160.38 214.92 160.38 214.92 157 211.54 157"/>
+            </g>
+          </g>
+          <g id="lorry">
+            <path d="m199.02,108.3h-10.81v-8.19h5.63l5.18,8.19Zm-17.86,12.65h6.7c1.74-2.59,3.49-3.66,6.59-3.66,4.11,0,6.25,2.48,7.09,7.38h2.08v-4.28h-1.63l.79-11.88-6.08-11.32h-15.54v23.76Zm7.01,5.1c0,3.15,2.53,5.63,5.58,5.63s5.52-2.48,5.52-5.63-2.48-5.63-5.52-5.63-5.58,2.48-5.58,5.63Zm-18.74,5.63c3.1,0,5.63-2.54,5.63-5.63s-2.53-5.63-5.63-5.63-5.57,2.53-5.57,5.69,2.48,5.57,5.57,5.57Zm-31.8,0c3.1,0,5.58-2.54,5.58-5.63s-2.48-5.63-5.58-5.63-5.57,2.48-5.57,5.63,2.53,5.63,5.57,5.63Zm-6.3-11.01c1.63-2.25,3.72-3.6,6.53-3.6s4.67,1.35,6.36,4.05h18.75c1.52-2.99,3.89-4.05,6.42-4.05,3.21,0,5.01,1.41,6.59,4.34h1.69v-32.32h-48.76v28.32h-2.7v3.26h5.12Z"/>
+          </g>
+        </svg>
+        <!-- svg content -->
+      </svg>
+      <button id="pause" class="btn">Play</button>
+    </div>
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.1_min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
+<!-- Note I need to animate a child group of the group that is actually clipped.  -->

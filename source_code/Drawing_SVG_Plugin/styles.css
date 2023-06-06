@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+:root {
+  --bg_colour: brown;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  visibility: hidden;
+  border: 1px solid lightgrey;
+}
+
+
+
+
+

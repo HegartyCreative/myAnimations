@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+#music {
+  clip-path: url(#mask);
+}
+
+.background {
+  z-index: 0;
+}
+
+#music {
+  z-index: 10;
+}

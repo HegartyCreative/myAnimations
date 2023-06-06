@@ -1,0 +1,68 @@
+
+
+/*!
+code for hero image
+ */
+ body {
+  margin: 0;
+  padding: 0;
+}
+
+/*!
+code section padding
+ */
+
+ section {
+  padding: 50px 0;
+}
+
+/* 
+Code for the image section
+*/
+
+.spacing{
+  margin-top: 26px;
+}
+
+.img{
+  max-width: 100%;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 18px;
+  color: #85878c;
+}
+
+
+.tz-gallery .thumbnail:hover {
+  transform: translateY(-10px) scale(3);
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+.tz-gallery img {
+  width: 100%;
+  height: auto";
+}
+
+.tz-gallery img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.last_banner{
+  margin-bottom: 175px;
+}
+
+

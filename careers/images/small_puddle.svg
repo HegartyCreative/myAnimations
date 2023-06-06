@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="small_puddle" xmlns="http://www.w3.org/2000/svg" width="300" height="265.3" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 265.3">
+  <defs>
+    <radialGradient id="radial-gradient" cx="160.53" cy="-5805.35" fx="160.53" fy="-5805.35" r="58.35" gradientTransform="translate(84.26 497.42) scale(.42 .04)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#459dba"/>
+      <stop offset="1" stop-color="#e6f3f7"/>
+    </radialGradient>
+  </defs>
+  <path d="m176.83,237.71c0-1.44-11.06-2.61-24.71-2.61s-24.71,1.17-24.71,2.61,11.06,2.61,24.71,2.61,24.71-1.17,24.71-2.61Z" style="fill: url(#radial-gradient);"/>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="large_puddle" xmlns="http://www.w3.org/2000/svg" width="300" height="265.3" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 265.3">
+  <defs>
+    <radialGradient id="New_Gradient_Swatch_2" data-name="New Gradient Swatch 2" cx="150" cy="-2861.94" fx="150" fy="-2861.94" r="58.35" gradientTransform="translate(0 485.48) scale(1 .09)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#c8e7f1"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="150" cy="235.22" rx="58.44" ry="5.09" style="fill: url(#New_Gradient_Swatch_2);"/>
+</svg>

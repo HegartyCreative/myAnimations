@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.background {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Introduction */
+
+.believe,
+.innovation,
+.starts,
+.when,
+.listen,
+.working,
+.with,
+.hiv,
+.decades,
+.used,
+.science,
+.technology,
+.talents,
+.think,
+.every,
+.reduce,
+.people {
+  position: absolute;
+}
+
+.logo {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+}
+
+.believe {
+  left: 69px;
+  top: 102px;
+}
+
+.innovation {
+  left: 46px;
+  top: 102px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.starts {
+  left: 96px;
+  top: 102px;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.when {
+  left: 71px;
+  top: 102px;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.listen {
+  left: 98px;
+  top: 102px;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+/* Working */
+
+.working {
+  left: 72px;
+  top: 102px;
+  opacity: 0;
+}
+
+.with {
+  left: 157px;
+  top: 102px;
+  opacity: 0;
+}
+
+.hiv {
+  left: 37px;
+  top: 102px;
+  opacity: 0;
+}
+
+.hiv span,
+.science,
+.technology,
+.talents span {
+  font-weight: 600;
+}
+
+/* Community */
+
+.community_image {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  scale: 1.2;
+  opacity: 0;
+}
+
+.square {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  scale: 1.2;
+  opacity: 0;
+}
+
+.decades {
+  left: 77px;
+  top: 77px;
+  opacity: 0;
+  line-height: 2.4rem;
+}
+
+.used {
+  left: 88px;
+  top: 77px;
+  opacity: 0;
+  line-height: 2.4rem;
+}
+
+.disease {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  z-index: 00;
+  top: 0;
+  left: 0;
+  scale: 1.2;
+  opacity: 0;
+}
+
+.science {
+  left: 90px;
+  top: 50px;
+}
+
+.technology {
+  left: 67px;
+  top: 90px;
+}
+
+.talents {
+  left: 71px;
+  top: 130px;
+}
+
+.think {
+  left: 42px;
+  top: 60px;
+  opacity: 1;
+  line-height: 3rem;
+  opacity: 0;
+}
+
+.think span {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.every {
+  left: 76px;
+  top: 70px;
+  opacity: 1;
+  font-size: 2rem;
+  opacity: 0;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+.reduce {
+  left: 31px;
+  top: 30px;
+  line-height: 2.4rem;
+}
+
+.people {
+  left: 62px;
+  top: 120px;
+  line-height: 2.4rem;
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

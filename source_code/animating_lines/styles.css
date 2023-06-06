@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  background: yellow;
+}
+
+.myLine2 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+
+.myRect {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+}

@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.start {
+  position: absolute;
+  width: 50%;
+  top: 100px;
+  left: 74px;
+  z-index: 100;
+}
+
+/* Intro */
+
+.blue {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  background-color: #0974f1;
+  padding-top: 50px;
+}
+
+.blue .over {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+  text-align: center;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.blue .hundred {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4.2rem;
+  z-index: 10;
+}
+
+#map {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Customers */
+
+.logo {
+  position: absolute;
+  width: 50%;
+  top: 70px;
+  left: 74px;
+  opacity: 0;
+}
+
+.customers {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  top: 147px;
+  left: 33px;
+  opacity: 0;
+}
+
+/* Use */
+
+.use {
+  font-size: 3.8rem;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0974f1;
+  position: absolute;
+  left: 88px;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.use1 {
+  top: 0;
+}
+
+.use2 {
+  top: 50px;
+}
+
+.use3 {
+  top: 100px;
+  color: #0974f1;
+}
+
+.use4 {
+  top: 150px;
+}
+
+.use5 {
+  top: 200px;
+}
+
+/* Yellow */
+
+.yellow {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: -300px;
+  background-color: yellow;
+  padding-top: 37px;
+}
+
+.warning {
+  position: absolute;
+  left: 30px;
+  color: #0974f1;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 3.9rem;
+  z-index: 40;
+}
+
+.deposit {
+  top: 70px;
+}
+
+.limits {
+  top: 115px;
+}
+
+.touch {
+  position: absolute;
+  top: 130px;
+  left: 200px;
+  z-index: 40;
+  width: 15%;
+}
+
+/* Black */
+
+.black {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: -250px;
+  left: 0px;
+  background-color: black;
+  padding-top: 37px;
+}
+
+.size {
+  position: absolute;
+  left: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 3.9rem;
+  z-index: 40;
+}
+
+.enough {
+  top: 70px;
+}
+
+.fill {
+  top: 115px;
+}
+
+.fill span {
+  font-style: italic;
+}
+
+#gamblers {
+  font-size: 6rem;
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  top: 58px;
+  left: 75px;
+  opacity: 0;
+}
+
+.park {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 140px;
+  left: 38px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 100;
+}
+
+/* transition */
+
+.transition {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.one {
+  left: 0px;
+  width: 25px;
+  height: 250px;
+  background-color: black;
+}
+
+.two {
+  left: 25px;
+  width: 25px;
+  height: 250px;
+  background-color: white;
+}
+
+.three {
+  left: 50px;
+  width: 25px;
+  height: 250px;
+  background-color: black;
+}
+
+.four {
+  left: 75px;
+  width: 25px;
+  height: 250px;
+  background-color: white;
+}
+
+.five {
+  left: 100px;
+  width: 25px;
+  height: 250px;
+  background-color: black;
+}
+
+.six {
+  left: 125px;
+  width: 25px;
+  height: 250px;
+  background-color: white;
+}
+
+.seven {
+  left: 150px;
+  width: 25px;
+  height: 250px;
+  background-color: black;
+}
+
+.eight {
+  left: 175px;
+  width: 25px;
+  height: 250px;
+  background-color: white;
+}
+
+.nine {
+  left: 200px;
+  width: 25px;
+  height: 250px;
+  background-color: black;
+}
+
+.ten {
+  left: 225px;
+  width: 25px;
+  height: 250px;
+  background-color: white;
+}
+
+.eleven {
+  left: 250px;
+  width: 25px;
+  height: 250px;
+  background-color: black;
+}
+
+.twelve {
+  left: 275px;
+  width: 25px;
+  height: 250px;
+  background-color: white;
+}
+
+/* End */
+
+.man {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+}
+
+.end {
+  position: absolute;
+  color: red;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  font-size: 2.4rem;
+  z-index: 20;
+}
+
+.join {
+  top: 69px;
+  left: 70px;
+  opacity: 0;
+}
+
+.the {
+  top: 69px;
+  left: 165px;
+  opacity: 0;
+}
+
+.million {
+  top: 135px;
+  left: 45px;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: left;
+  z-index: 50;
+  opacity: 0;
+}
+
+/* Heading */
+
+.red {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: -300px;
+  background-color: red;
+  opacity: 1;
+}
+
+.heading {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  text-align: left;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 47px;
+  opacity: 0;
+}
+
+.sub {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.6rem;
+  font-weight: 600;
+  position: absolute;
+  top: 100px;
+  left: 47px;
+  opacity: 0;
+}
+
+/* Closing */
+
+.endRight {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0px;
+  background-color: #0974f1;
+}
+
+.logo2 {
+  position: absolute;
+  width: 50%;
+  top: 70px;
+  left: 74px;
+  opacity: 0;
+  z-index: 200;
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

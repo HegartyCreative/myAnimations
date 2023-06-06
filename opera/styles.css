@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.clipped {
+  clip-path: url(#clip1);
+}
+
+.container {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.starter {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  z-index: 100;
+  width: 13%;
+}
+
+h1,
+h3 {
+  z-index: 20;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  transform: rotate(49.5deg);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+h2 {
+  z-index: 20;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  white-space: nowrap;
+}
+
+.one {
+  position: absolute;
+  top: 21px;
+  left: 258px;
+}
+
+.two {
+  position: absolute;
+  top: 35px;
+  left: 207px;
+}
+
+.three {
+  position: absolute;
+  top: 49px;
+  left: 178px;
+}
+
+.date {
+  position: absolute;
+  top: 192px;
+  left: 5px;
+  font-size: 0.6rem;
+  transform: rotate(48.5deg);
+  color: white;
+}
+
+.link {
+  position: absolute;
+  top: 225px;
+  left: 235px;
+  font-size: 0.6rem;
+  z-index: 100;
+  transform: rotate(0deg);
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

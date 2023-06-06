@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  /* margin: 100px; */
+}
+
+.background {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.start {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.title {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  font-size: 3rem;
+}
+
+.isAn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+}
+
+.invisible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.6rem;
+  color: red;
+}
+
+.foe {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  font-size: 3.2rem;
+  opacity: 0;
+}
+
+.invisible_img {
+  position: absolute;
+  top: 135px;
+  left: 120px;
+  z-index: 100;
+  width: 75%;
+}
+
+.invisible_red {
+  position: absolute;
+  top: 140px;
+  left: 174px;
+  z-index: 100;
+  width: 37%;
+  opacity: 0;
+}
+
+.living {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  font-size: 2.8rem;
+  opacity: 0;
+}
+
+.inLiberia {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  font-size: 2.8rem;
+  opacity: 0;
+}
+
+.right {
+  position: absolute;
+  top: 158px;
+  left: 10px;
+  font-size: 2rem;
+}
+
+.right span {
+  color: red;
+}
+
+.africa1 {
+  position: absolute;
+  width: 80%;
+  opacity: 0;
+}
+
+.africa2 {
+  position: absolute;
+  width: 5%;
+  top: 78px;
+  left: 178px;
+  opacity: 0;
+}
+
+/* Living with anxiety */
+
+.living2 {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  left: 63px;
+  font-size: 3rem;
+  opacity: 0;
+}
+.with {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  left: 79px;
+  font-size: 3rem;
+  color: black;
+  opacity: 0;
+}
+.anxiety {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  font-size: 3rem;
+  color: red;
+  opacity: 0;
+}
+
+.anxiety_img {
+  position: absolute;
+  width: 55%;
+  top: 255px;
+  left: 74px;
+  opacity: 1;
+}
+
+/* Where people */
+
+.situation {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  font-size: 2.6rem;
+}
+
+.where {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 95px;
+  left: 10px;
+  font-size: 4.35rem;
+  color: red;
+}
+
+/* People are */
+
+.people {
+  position: absolute;
+  top: 84px;
+  left: 50px;
+  font-size: 2.8rem;
+  opacity: 1;
+}
+
+.are {
+  position: absolute;
+  top: 120px;
+  left: 143px;
+  font-size: 4rem;
+  opacity: 1;
+  color: white;
+}
+
+.man {
+  opacity: 0;
+}
+
+/* First row */
+
+.man_img1 {
+  position: absolute;
+  top: 43px;
+  left: 220px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img2 {
+  position: absolute;
+  top: 43px;
+  left: 195px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img3 {
+  position: absolute;
+  top: 43px;
+  left: 170px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img4 {
+  position: absolute;
+  top: 43px;
+  left: 145px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img5 {
+  position: absolute;
+  top: 43px;
+  left: 120px;
+  z-index: 100;
+  width: 6%;
+}
+
+/* Second row */
+
+.man_img6 {
+  position: absolute;
+  top: 134px;
+  left: 120px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img7 {
+  position: absolute;
+  top: 134px;
+  left: 95px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img8 {
+  position: absolute;
+  top: 134px;
+  left: 70px;
+  z-index: 100;
+  width: 6%;
+}
+
+/* Third row */
+
+.man_img9 {
+  position: absolute;
+  top: 187px;
+  left: 220px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img10 {
+  position: absolute;
+  top: 187px;
+  left: 195px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img11 {
+  position: absolute;
+  top: 187px;
+  left: 170px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img12 {
+  position: absolute;
+  top: 187px;
+  left: 145px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img13 {
+  position: absolute;
+  top: 187px;
+  left: 120px;
+  z-index: 100;
+  width: 6%;
+}
+
+.man_img14 {
+  position: absolute;
+  top: 187px;
+  left: 95px;
+  z-index: 100;
+  width: 6%;
+  transform-origin: bottom left;
+}
+
+.suspicious {
+  position: absolute;
+  top: 132px;
+  left: 20px;
+  font-size: 2.5rem;
+  opacity: 0;
+}
+
+/* Fluids */
+
+.fluids_img {
+  position: absolute;
+  width: 60%;
+  top: 10px;
+  left: 48px;
+  opacity: 0;
+  z-index: 15;
+}
+
+/* .fluids_mask {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 2000px;
+  height: 47px;
+  background-color: white;
+  z-index: 10;
+  opacity: 0;
+} */
+
+.any1 {
+  position: absolute;
+  top: 70px;
+  left: 48px;
+  font-size: 3.2rem;
+  z-index: 30;
+}
+
+.fluids {
+  position: absolute;
+  top: 115px;
+  left: 51px;
+  font-size: 3.2rem;
+  color: red;
+  opacity: 0;
+  z-index: 20;
+}
+
+/* Handshake */
+
+.any2 {
+  position: absolute;
+  top: 25px;
+  left: 48px;
+  font-size: 3.2rem;
+  z-index: 30;
+  opacity: 0;
+}
+
+.handshake {
+  position: absolute;
+  top: 75px;
+  left: 51px;
+  font-size: 1.9rem;
+  color: red;
+  z-index: 20;
+  opacity: 0;
+}
+
+.or {
+  position: absolute;
+  top: 105px;
+  left: 127px;
+  font-size: 1.6rem;
+  z-index: 20;
+  opacity: 0;
+}
+
+.human {
+  position: absolute;
+  top: 129px;
+  left: 19px;
+  font-size: 1.7rem;
+  color: red;
+  z-index: 20;
+  opacity: 0;
+}
+
+.contact_man_img {
+  position: absolute;
+  width: 15%;
+  top: 170px;
+  left: 90px;
+  z-index: 15;
+  opacity: 0;
+}
+
+.contact_woman_img {
+  position: absolute;
+  width: 14%;
+  top: 173px;
+  left: 132px;
+  z-index: 15;
+  opacity: 0;
+}
+
+.contact_child_img {
+  position: absolute;
+  width: 12%;
+  top: 186px;
+  left: 170px;
+  z-index: 15;
+  opacity: 0;
+}
+
+/* Eboloa virus */
+
+.red {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: red;
+  z-index: 30;
+}
+
+/* Ebola virus */
+
+.ebola {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  font-size: 2.2rem;
+  color: white;
+  z-index: 40;
+}
+
+.virus {
+  position: absolute;
+  top: 95px;
+  left: 45px;
+  font-size: 4.6rem;
+  color: black;
+  z-index: 40;
+}
+
+.ebola_background {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  background-color: black;
+  z-index: 30;
+  height: 42px;
+  width: 245px;
+}
+
+.virus_background {
+  position: absolute;
+  top: 105px;
+  left: 33px;
+  background-color: white;
+  z-index: 30;
+  height: 70px;
+  width: 270px;
+}
+
+.hasBeen {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 2.1rem;
+  z-index: 60;
+  color: white;
+}
+
+.ravaging {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  font-size: 2.1rem;
+  z-index: 60;
+  color: white;
+}
+
+.westAfrica {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  font-size: 2.1rem;
+  z-index: 60;
+  color: white;
+}
+
+.years {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  font-size: 2.1rem;
+  z-index: 60;
+  color: white;
+}
+
+.years span {
+  color: red;
+}
+
+.africa3 {
+  position: absolute;
+  width: 120%;
+  opacity: 1;
+  z-index: 50;
+}
+
+/* Outbreak spread */
+
+.disease {
+  opacity: 0;
+}
+
+.outbreak {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 2.2rem;
+  line-height: 2.1rem;
+  z-index: 60;
+  text-align: right;
+}
+
+.spread {
+  position: absolute;
+  top: 138px;
+  right: 40px;
+  font-size: 2.1rem;
+  z-index: 60;
+}
+
+.outbreak span {
+  color: red;
+}
+
+.spread span {
+  color: red;
+}
+
+.rate {
+  position: absolute;
+  top: 138px;
+  right: 40px;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  z-index: 60;
+  text-align: right;
+}
+
+.rate span {
+  color: red;
+  font-size: 4rem;
+}
+
+.estimated {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  font-size: 1.9rem;
+  z-index: 60;
+}
+
+.estimated span {
+  color: red;
+}
+
+.there {
+  position: absolute;
+  top: 108px;
+  left: 20px;
+  font-size: 1.9rem;
+  z-index: 60;
+}
+
+.figure {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  text-align: left;
+  z-index: 60;
+}
+
+#numbers {
+  font-size: 3rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.cases {
+  position: absolute;
+  top: 85px;
+  left: 100px;
+  text-align: left;
+  font-size: 1.15rem;
+  z-index: 60;
+  opacity: 0;
+}
+
+#numbers {
+  color: red;
+  opacity: 0;
+}
+
+/* end */
+
+.end_text {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  z-index: 60;
+  text-align: center;
+  opacity: 0;
+}
+
+.end_text span {
+  color: red;
+}
+
+.website {
+  position: absolute;
+  top: 180px;
+  left: 85px;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  z-index: 60;
+  text-align: center;
+  opacity: 0;
+}
+
+/* Button code */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

@@ -1,0 +1,20 @@
+.jumbotron {
+  color: white;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Open Sans", "serif";
+
+  h1 {
+    font-weight: 700;
+    font-size: 4em;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 2.5em;
+    color: #ffffff !important;
+  }
+}

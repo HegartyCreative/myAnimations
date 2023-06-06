@@ -1,0 +1,320 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* Intro */
+
+#begin {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  z-index: 30;
+  top: 0;
+  left: 0;
+}
+
+#start {
+  position: absolute;
+  height: 250px;
+  width: 380px;
+  left: -80px;
+}
+
+#line {
+  opacity: 0;
+}
+
+#study {
+  clip-path: url(#myMask);
+}
+
+#worlds {
+  clip-path: url(#myMask);
+}
+
+#financial {
+  clip-path: url(#myMask);
+}
+
+/* 12,000 professionals */
+
+.join {
+  position: absolute;
+  top: 32px;
+  left: 70px;
+  font-size: 1.2rem;
+}
+
+.figure1 {
+  position: absolute;
+  top: 59px;
+  left: 82px;
+  font-size: 3rem;
+  text-align: center;
+  color: #add8e6;
+}
+
+.professionals {
+  position: absolute;
+  top: 118px;
+  left: 87px;
+  font-size: 1.2rem;
+}
+
+.based {
+  position: absolute;
+  top: 144px;
+  left: 72px;
+  font-size: 1.2rem;
+}
+
+.london {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.7;
+}
+
+/* 50,000 professionals */
+
+.worldwide_section {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  left: 0px;
+  top: 0px;
+  background-color: #00008b;
+  z-index: 10;
+}
+
+#globe {
+  z-index: 20;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.and_title {
+  position: absolute;
+  top: 45px;
+  left: 125px;
+  z-index: 20;
+  font-size: 1.6rem;
+}
+
+.figure2 {
+  position: absolute;
+  top: 72px;
+  left: 72px;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #add8e6;
+  z-index: 20;
+}
+
+.worldwide {
+  position: absolute;
+  top: 132px;
+  left: 86px;
+  z-index: 20;
+  font-size: 1.6rem;
+}
+
+/* Students */
+
+#students_img {
+  z-index: 20;
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+}
+
+.fifty {
+  position: absolute;
+  top: 72px;
+  left: 121px;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #add8e6;
+  z-index: 30;
+}
+
+.students {
+  position: absolute;
+  top: 130px;
+  left: 97px;
+  z-index: 30;
+  font-size: 1.6rem;
+}
+
+/* Experience */
+
+.average {
+  position: absolute;
+  top: 40px;
+  left: 55px;
+  z-index: 30;
+  font-size: 1.3rem;
+}
+
+.seven {
+  position: absolute;
+  top: 65px;
+  left: 130px;
+  z-index: 30;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #add8e6;
+}
+
+.years {
+  position: absolute;
+  top: 170px;
+  left: 54px;
+  z-index: 30;
+  font-size: 1.3rem;
+}
+
+.experience_img {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+/* Electives */
+
+.electives_section {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  left: 0px;
+  top: 0px;
+  background-color: #00008b;
+  z-index: 30;
+}
+
+.electives_img {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  left: 0px;
+  top: 0px;
+  z-index: 30;
+}
+
+#outline {
+  stroke-dasharray: 692;
+  stroke-dashoffset: 692;
+}
+
+.choose {
+  position: absolute;
+  top: 40px;
+  left: 108px;
+  z-index: 30;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.fifty2 {
+  position: absolute;
+  top: 87px;
+  left: 125px;
+  z-index: 30;
+  font-size: 3rem;
+  color: #add8e6;
+}
+
+.electives {
+  position: absolute;
+  top: 141px;
+  left: 110px;
+  z-index: 30;
+  font-size: 1.2rem;
+}
+
+.electives_img {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  z-index: 30;
+  top: 0;
+  left: 0;
+}
+
+/* End */
+
+.end_section {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  left: 0px;
+  top: 0px;
+  background-color: #00008b;
+  z-index: 30;
+}
+
+#end_section {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  left: 0px;
+  z-index: 30;
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

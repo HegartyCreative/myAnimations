@@ -1,0 +1,20 @@
+const demo = document.querySelector(".demo");
+const tl = gsap
+  .timeline({ defaults: { duration: 1.3 } })
+  .to(demo, { attr: { viewBox: "0 0 50 50" } })
+  .to(demo, { attr: { viewBox: "0 50 50 50" } })
+  .to(demo, { attr: { viewBox: "0 100 50 50" } })
+  .to(demo, { attr: { viewBox: "0 150 50 50" } })
+  .to(demo, { attr: { viewBox: "50 0 50 50" } })
+  .to(demo, { attr: { viewBox: "50 50 50 50" } })
+  .to(demo, { attr: { viewBox: "50 100 50 50" } })
+  .to(demo, { attr: { viewBox: "50 150 50 50" } })
+  .to(demo, { attr: { viewBox: "100 0 50 50" } })
+  .to(demo, { attr: { viewBox: "100 50 50 50" } })
+  .to(demo, { attr: { viewBox: "100 100 50 50" } })
+  .to(demo, { attr: { viewBox: "100 150 50 50" } })
+  .to(demo, { attr: { viewBox: "150 0 50 50" } })
+  .to(demo, { attr: { viewBox: "150 50 50 50" } })
+  .to(demo, { attr: { viewBox: "150 100 50 50" } })
+  .to(demo, { attr: { viewBox: "150 150 50 50" } })
+  .to(demo, { attr: { viewBox: "0 0 200 200" } });

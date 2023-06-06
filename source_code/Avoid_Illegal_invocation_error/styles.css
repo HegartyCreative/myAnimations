@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ball1 {
+  background-color: green;
+  left: 10px;
+}
+
+.ball2 {
+  background-color: red;
+  left: 75px;
+}
+
+.ball3 {
+  background-color: blue;
+  left: 150px;
+}

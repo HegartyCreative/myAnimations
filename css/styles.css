@@ -1,0 +1,388 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 250px;
+  width: 300px;
+  background-color: #6cb4ee;
+  visibility: hidden;
+  position: relative;
+}
+
+.start_logo {
+  position: absolute;
+  top: 95px;
+  left: 42px;
+  width: 70%;
+  overflow: hidden;
+  z-index: 100;
+  opacity: 1;
+}
+
+.background {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.bck {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 250px;
+  width: 300px;
+  z-index: 0;
+}
+
+.sea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 250px;
+  width: 300px;
+  z-index: 20;
+}
+
+.wallet_front {
+  position: absolute;
+  top: 115px;
+  left: 65px;
+  width: 57%;
+  z-index: 15;
+}
+
+.wallet_back {
+  position: absolute;
+  top: 90px;
+  left: 65px;
+  width: 57%;
+  z-index: 5;
+}
+
+.passport {
+  position: absolute;
+  top: 94px;
+  left: 50px;
+  width: 15%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.ticket {
+  position: absolute;
+  top: 70px;
+  left: 45px;
+  width: 30%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.photo {
+  position: absolute;
+  top: 97px;
+  left: 98px;
+  width: 13%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.redeemer {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 33%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.paris {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  width: 20%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.suitcase {
+  position: absolute;
+  top: 95px;
+  left: 124px;
+  width: 19%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.taj {
+  position: absolute;
+  top: 45px;
+  left: 110px;
+  width: 35%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.camera {
+  position: absolute;
+  top: 90px;
+  left: 175px;
+  width: 15%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.liberty {
+  position: absolute;
+  top: 10px;
+  left: 175px;
+  width: 18%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.ben {
+  position: absolute;
+  top: 30px;
+  left: 198px;
+  width: 17%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.bon_image {
+  position: absolute;
+  top: 3px;
+  left: 60px;
+  width: 60%;
+  z-index: 20;
+  z-index: 0;
+}
+
+.bon_background {
+  position: absolute;
+  top: 47px;
+  left: 76px;
+  width: 50%;
+  z-index: 20;
+  opacity: 1;
+}
+
+.bon {
+  position: absolute;
+  top: 67px;
+  left: 104px;
+  width: 31%;
+  z-index: 20;
+  opacity: 1;
+}
+
+.voyage {
+  position: absolute;
+  top: 78px;
+  left: 81px;
+  width: 47%;
+  z-index: 20;
+  opacity: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 190px;
+  left: 15px;
+  width: 20%;
+  z-index: 80;
+  opacity: 0;
+}
+
+.explore {
+  position: absolute;
+  top: 190px;
+  left: 230px;
+  width: 17%;
+  z-index: 80;
+  opacity: 0;
+}
+
+/* Code below for the button */
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}/*# sourceMappingURL=styles.css.map */top: 192px;
+  left: 82px;
+  z-index: 50;
+  text-align: center;
+  font-weight: normal;
+}
+
+.mobile_amount {
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 102px;
+  left: 79px;
+  z-index: 150;
+  text-align: center;
+  opacity: 0;
+  font-weight: normal;
+}
+
+.short {
+  height: 75px;
+  width: 48px;
+  background-color: #a6bc09;
+  position: absolute;
+  top: 111px;
+  left: 125px;
+  z-index: 100;
+}
+
+.short_text {
+  color: white;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 192px;
+  left: 135px;
+  z-index: 50;
+  text-align: center;
+  font-weight: normal;
+}
+
+.short_amount {
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 113px;
+  left: 133px;
+  z-index: 150;
+  text-align: center;
+  opacity: 0;
+  font-weight: normal;
+}
+
+.virtual {
+  height: 75px;
+  width: 48px;
+  background-color: #a6bc09;
+  position: absolute;
+  top: 111px;
+  left: 177px;
+  z-index: 100;
+}
+
+.virtual_text {
+  color: white;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 192px;
+  left: 189px;
+  z-index: 50;
+  text-align: center;
+  font-weight: normal;
+}
+
+.virtual_amount {
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 113px;
+  left: 184px;
+  z-index: 150;
+  text-align: center;
+  opacity: 0;
+  font-weight: normal;
+}
+
+.experimental {
+  height: 65px;
+  width: 48px;
+  background-color: #a6bc09;
+  position: absolute;
+  top: 121px;
+  left: 230px;
+  z-index: 100;
+}
+
+.experimental_text {
+  color: white;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 192px;
+  left: 230px;
+  z-index: 50;
+  text-align: center;
+  font-weight: normal;
+}
+
+.experimental_amount {
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 124px;
+  left: 236px;
+  z-index: 150;
+  text-align: center;
+  opacity: 0;
+  font-weight: normal;
+}
+
+/* Code below for the button */
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}/*# sourceMappingURL=styles.css.map */

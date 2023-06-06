@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  background: #1d1d1d;
+}
+.demo {
+  border: 1px solid #333;
+  width: 45vmax;
+  margin: 50px;
+  overflow: hidden;
+}
