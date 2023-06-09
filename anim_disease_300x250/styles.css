@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
 
-html {
-  box-sizing: border-box;
+:root {
+  --main-bg-color: #ffffff;
 }
 
 *,
@@ -12,27 +12,22 @@ html {
   padding: 0;
 }
 
-p {
+html {
+  box-sizing: border-box;
+}
+
+body{
+  color: var(--main-bg-color);
   font-family: "Jost", sans-serif;
-  font-weight: 400;
-  color: white;
-  letter-spacing: 0.05rem;
-  font-size: 2rem;
-  text-align: center;
+  font-weight: normal;
 }
 
 .container {
+  position: relative;
   height: 250px;
   width: 300px;
-  position: relative;
   overflow: hidden;
   visibility: hidden;
-}
-
-.background {
-  position: relative;
-  height: 250px;
-  width: 300px;
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -43,30 +38,10 @@ p {
     to right,
     #f5af19,
     #f12711
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
 }
 
-/* Introduction */
-
-.believe,
-.innovation,
-.starts,
-.when,
-.listen,
-.working,
-.with,
-.hiv,
-.decades,
-.used,
-.science,
-.technology,
-.talents,
-.think,
-.every,
-.reduce,
-.people {
-  position: absolute;
-}
+/* Intro */
 
 .logo {
   height: 250px;
@@ -77,67 +52,71 @@ p {
   left: 0;
 }
 
-.believe {
+p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+}
+
+.text{
+  position: absolute;
+  z-index: 10;
+}
+
+#believe {
   left: 69px;
   top: 102px;
 }
 
-.innovation {
+#innovation {
   left: 46px;
   top: 102px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.starts {
-  left: 96px;
+#starts {
+  left: 110px;
   top: 102px;
-  opacity: 0;
-  text-transform: uppercase;
 }
 
-.when {
-  left: 71px;
+#when {
+  left: 84px;
   top: 102px;
-  opacity: 0;
-  text-transform: uppercase;
 }
 
-.listen {
-  left: 98px;
+#listen {
+  left: 110px;
   top: 102px;
-  opacity: 0;
-  text-transform: uppercase;
 }
 
 /* Working */
 
-.working {
-  left: 72px;
+#working {
+  left: 87px;
   top: 102px;
-  opacity: 0;
 }
 
-.with {
-  left: 157px;
+#withThe {
+  left: 155px;
   top: 102px;
-  opacity: 0;
 }
 
-.hiv {
+#hiv {
   left: 37px;
   top: 102px;
-  opacity: 0;
 }
 
-.hiv span,
-.science,
-.technology,
-.talents span {
+#hiv span,
+#science,
+#technology,
+#talents span {
   font-weight: 600;
 }
 
-/* Community */
+/* Image */
 
 .community_image {
   height: 250px;
@@ -150,71 +129,61 @@ p {
   opacity: 0;
 }
 
-.square {
-  height: 250px;
-  width: 300px;
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  scale: 1.2;
-  opacity: 0;
-}
-
-.decades {
+#decades {
   left: 77px;
   top: 77px;
-  opacity: 0;
   line-height: 2.4rem;
 }
 
-.used {
+#used {
   left: 88px;
   top: 77px;
-  opacity: 0;
   line-height: 2.4rem;
 }
 
-.disease {
+#disease {
   height: 250px;
   width: 300px;
   position: absolute;
-  z-index: 00;
+  z-index: 10;
   top: 0;
   left: 0;
   scale: 1.2;
   opacity: 0;
 }
 
-.science {
+#science {
   left: 90px;
   top: 50px;
 }
 
-.technology {
+#technology {
   left: 67px;
   top: 90px;
 }
 
-.talents {
+#talents {
   left: 71px;
   top: 130px;
 }
 
-.think {
+/* Think */
+
+#think {
   left: 42px;
   top: 60px;
   opacity: 1;
   line-height: 3rem;
   opacity: 0;
+  text-align: center;
 }
 
-.think span {
+#think span {
   font-weight: 600;
   font-size: 4rem;
 }
 
-.every {
+#every {
   left: 76px;
   top: 70px;
   opacity: 1;
@@ -224,17 +193,25 @@ p {
   line-height: 2.4rem;
 }
 
-.reduce {
+#reduce {
   left: 31px;
-  top: 30px;
+  top: 70px;
   line-height: 2.4rem;
 }
 
-.people {
-  left: 62px;
-  top: 120px;
+#people {
+  left: 31px;
+  top: 145px;
   line-height: 2.4rem;
 }
+
+
+
+
+
+
+
+
 
 /* Code below for the button */
 
@@ -264,3 +241,11 @@ p {
   left: 10px;
   top: 260px;
 }
+
+
+/* Mask */
+
+/* #id element {
+  clip-path: url(#myMask);
+} */
+

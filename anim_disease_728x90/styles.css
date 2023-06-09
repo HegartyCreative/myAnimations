@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+:root {
+  --main-bg-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  color: var(--main-bg-color);
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  position: relative;
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  visibility: hidden;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  );
+}
+
+/* Intro */
+
+.logo {
+  height: 90px;
+  width: 728px;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+}
+
+p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.05rem;
+  font-size: 2.2rem;
+}
+
+.text{
+  position: absolute;
+  z-index: 10;
+}
+
+#believe {
+  left: 150px;
+  top: 20px;
+}
+
+#innovation {
+  left: 340px;
+  top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#starts {
+  left: 205px;
+  top: 20px;
+}
+
+/* Working */
+
+#working {
+  left: 95px;
+  top: 24px;
+}
+
+
+#science,
+#technology,
+#talents span {
+  font-weight: 600;
+}
+
+/* Image */
+
+.community_image {
+  height: 90px;
+  width: 728px;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  scale: 1.2;
+  opacity: 0;
+}
+
+#decades {
+  left: 32px;
+  top: 24px;
+  line-height: 2.4rem;
+}
+
+#disease {
+  width: 728px;
+  height: 90px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  scale: 1.2;
+  opacity: 0;
+}
+
+#science {
+  left: 75px;
+  top: 21px;
+}
+
+#technology {
+  left: 260px;
+  top: 21px;
+}
+
+#talents {
+  left: 463px;
+  top: 21px;
+}
+
+/* Think */
+
+#think {
+  left: 110px;
+  top: 24px;
+  opacity: 1;
+  line-height: 3rem;
+  opacity: 0;
+  text-align: center;
+}
+
+#every {
+  left: 105px;
+  top: 3px;
+  opacity: 1;
+  font-size: 2.2rem;
+  opacity: 0;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+#people {
+  left: 35px;
+  top: 24px;
+  line-height: 2.4rem;
+}
+
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 100px;
+}
+
+
+/* Mask */
+
+/* #id element {
+  clip-path: url(#myMask);
+} */
+
