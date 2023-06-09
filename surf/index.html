@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+    <meta name="ad.size" content="width=300,height=250" />
+    <meta name="viewport" content="user-scalable=yes, width=300" />
+    <title>Flyaway animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/logo_start.svg" alt="Flyaway logo" class="start_logo">
+      <!-- add 'autoplay' after muted to ensure the video plays automatically -->
+      <video muted playsinline width="100%" height="auto"  id="one" preload="preload" class="video">
+        <source src="images/sequence.mp4" type="video/mp4" poster="images/poster.jpg"></source>
+      </video> 
+      <img src="images/logo.svg" alt="Flyaway logo" class="logo">
+      <h1>Surf and beach weekend? </h1>
+      <h2>Biarritz at the best price: £135*</h2>
+      <button class="book">Book now</button>
+      <button id="pause" class="btn">Play</button>
+    </div>
+
+    <!-- webkit-playsinline playsinline -->
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.1_min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
