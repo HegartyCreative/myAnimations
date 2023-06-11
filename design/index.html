@@ -11,6 +11,9 @@
   <body>
     <div class="container">
       <div class="overlay"></div>
+            <video muted playsinline width="300" height="250" preload="preload" class="video" poster="images/poster.jpg">
+        <source class="myVideo" src="images/sequence.mp4" type="video/mp4" ></source>
+      </video> 
       <svg class="icons" width="300" height="250" viewBox="0 0 300 250">
         <g id="yellow">
           <polygon points="234.06 250 138.15 250 102.69 214.44 150.64 166.36 188.99 204.81 195.65 211.49 234.06 250" fill="#ffe122" opacity=".75"/>
@@ -110,10 +113,6 @@
           </g>
         </g>
       </svg>
-
-      <video muted playsinline width="100%" height="auto"  id="one" preload="preload" class="video">
-        <source class="myVideo" src="images/sequence.mp4" type="video/mp4" poster="images/poster.jpg"></source>
-      </video> 
       <button id="pause" class="btn">Play</button>
     </div>
 
