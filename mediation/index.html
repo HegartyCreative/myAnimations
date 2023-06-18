@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+    <meta name="ad.size" content="width=300,height=250" />
+    <meta name="viewport" content="user-scalable=yes, width=300" />
+    <title>Mediation animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+<svg width="300" height="250" viewBox="0 0 300 250">
+  <defs>
+    <clipPath id="mask1">
+      <polygon points="134.85 195.73 148.12 208.34 161 241.52 158.08 250 300 250 300 0 98.69 0 117.22 10.59 129.79 26.52 141.08 55.05 145 82.26 142 112.79 136.12 149.28 137.77 160.86 134.85 195.73" fill="#e51c1c"/>
+    </clipPath>
+  </defs>
+  <defs>
+    <clipPath id="mask2">
+      <polygon points="128.95 0 128.95 11.26 128.95 23.86 128.95 33.01 128.95 77.61 128.95 91.55 128.95 105.82 128.95 119.09 128.95 130.37 135.52 145.63 129.5 147.45 118.93 146.63 106.98 146.3 187 241.52 184.08 250 300 250 300 0 128.95 0" fill="#53e21e"/>
+    </clipPath>
+  </defs>
+  <defs>
+    <clipPath id="mask3">
+      <polygon points="128.69 0 147.23 10.59 140.83 28.81 129.97 33.01 129.97 77.61 129.97 90.52 129.97 105.82 129.97 119.09 129.97 129.38 129.49 144.64 123.47 146.46 112.9 145.63 106.98 146.3 187 241.52 184.08 250 300 250 300 0 128.69 0" fill="#f2de25"/>
+    </clipPath>
+  </defs>
+</svg>
+      <g id="mainTitle1">
+        <h1 >The</h1>
+      </g>
+      <g id="mainTitle2">
+        <h1 >Joy of</h1>
+      </g>
+      <g id="mainTitle3">
+        <h1 >Meditation</h1>
+      </g>
+      <g id="subTitle1">
+        <h2>Would you like to experience less stress and more happiness and joy in your life?</h2>
+      </g>
+      <g id="subTitle2">
+        <h2>If so, the Joy <br>of Meditation <br>is for you!</h2>
+      </g>
+      <g id="subTitle3">
+        <h2>mediationjoy.io</h2>
+      </g>
+      <div class="overlay"></div>
+      <video muted playsinline width="300" height="250" preload="preload" class="video">
+        <source class="myVideo" src="images/sequence.mp4" type="video/mp4" poster="images/poster.jpg" ></source>
+      </video> 
+      <button id="pause" class="btn">Play</button>
+    </div>
+
+    <!-- webkit-playsinline playsinline -->
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.1_min.js"></script>
+    <script src="script.js" defer></script>
+
+
+  </body>
+</html>
