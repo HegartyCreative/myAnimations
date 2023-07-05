@@ -2,43 +2,32 @@ let select = (e) => document.querySelector(e);
 let selectAll = (e) => document.querySelectoAll(e);
 
 const container = select(".container");
-const square = select(".square");
-const circle = select(".circle");
+const square = gsap.utils.toArray(".square");
 
 gsap.set(container, { autoAlpha: 1 });
 
-// Nested timeline
 var master = gsap.timeline({
   paused: true,
   onComplete: () => (pause.innerHTML = "Play"),
 });
 
-// move element horizontally 100px
-master
-  .to(square, 0.5, {
-    x: 100,
-  })
-  .add("go") // add a label
-  // move element vertically 100px
-  // with reference to the 'go' label
-  .to(
-    square,
-    1,
-    {
-      y: 100,
-    },
-    "go"
-  )
-  // rotate otherElement
-  // with reference to the 'go' label
-  .to(
-    circle,
-    0.5,
-    {
-      scale: 3,
-    },
-    "go"
-  );
+master.from(square, {
+  y: -150,
+  stagger: 0.25,
+  ease: "back.out(3)",
+  duration: 1,
+});
+
+master.to(
+  square,
+  {
+    y: 300,
+    stagger: 0.25,
+    ease: "back.in(1.3)",
+    duration: 1,
+  },
+  "+=1"
+);
 
 // Button code
 

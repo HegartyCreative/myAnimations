@@ -1,13 +1,9 @@
-@media only screen and (max-width: 1200px) {
-  .long_banner {
-    display: none;
-  }
-  .banner {
-    padding-left: 30px;
-  }
-}
 .insta a {
-  color: #34534e !important;
+  color: #34534e !important !important;
+}
+
+.anim {
+  padding-top: 10px;
 }
 
 #googleWeb {
@@ -172,4 +168,3 @@ iframe {
 .line, .custom-bullet {
   padding-top: 0;
 }/*# sourceMappingURL=main.css.map */
-
