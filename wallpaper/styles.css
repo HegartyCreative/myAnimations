@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin-bottom: 0;
+}
+
+.tour__gallery {
+  margin: 0px;
+  max-width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(64, 171, 137, 0.45);
+}
+.picture__slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 300px;
+}
+.carousel__image {
+  list-style: none;
+  flex-shrink: 0;
+  flex-basis: 20%;
+  height: 100%;
+  padding-bottom: 0;
+  background-color: #ebeced;
+}
+.carousel__image img {
+  min-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  background-color: #ebeced;
+}
+
+.controls .btn--next {
+  margin-top: 0;
+  padding: 4px;
+  position: absolute;
+  right: 10px;
+  top: 93%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #40ab89;
+  font-size: 14px;
+}
+.controls .btn--prev {
+  margin-top: 0;
+  padding: 4px;
+  position: absolute;
+  left: 010px;
+  top: 93%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #40ab89;
+  font-size: 14px;
+}
+.controls button:hover {
+  background: rgba(64, 171, 137, 0.45);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.bottom_bar {
+  position: absolute;
+  bottom: 9px;
+  left: 77px;
+  z-index: 100;
+  font-size: 0.8rem;
+  color: #40ab89;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.03rem;
+  font-weight: 400;
+}
+
+#logo {
+  position: absolute;
+  top: 8px;
+  left: 81px;
+  width: 45%;
+  z-index: 1000;
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}

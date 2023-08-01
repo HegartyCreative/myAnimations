@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;400&display=swap");
 
 body {
-  font-family: "Geologica", sans-serif;
-  font-weight: 400;
-  color: white;
   margin: 0;
-  padding: 0;
+  color: white;
+  font-family: "Geologica", sans-serif;
 }
 
-.wrapper {
+.container {
   position: relative;
   height: 250px;
   width: 300px;
@@ -16,47 +14,39 @@ body {
   background-image: url("images/master.jpg");
   background-size: 300px 250px;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
-.container {
-  padding: 5px 15px 0px 15px;
-  text-align: center;
+.wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
 }
 
-h1 {
+h2 {
   font-family: "Geologica", sans-serif;
+  text-align: center;
   font-weight: 400;
   font-size: 1.5rem;
-}
-
-.quote {
-  font-size: 0.85rem;
-  line-height: 1.1rem;
-  font-weight: 400;
-  margin-top: 0.25rem;
-  margin-bottom: 0.45rem;
-}
-
-.author {
-  font-size: 1rem;
-  font-weight: 100;
-  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .btn {
   position: absolute;
-  font-size: 1rem;
-  cursor: pointer;
+  top: 180px;
+  left: 91px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
   padding-top: 0.5rem;
   padding-bottom: 0.45rem;
-  top: 200px;
-  left: 100px;
-  border-style: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 400;
   width: 120px;
-  color: white;
-  background-color: transparent;
-  border: 1px solid white;
-    border-radius: 5px;
+  font-family: "Geologica", sans-serif;
 }
 
 .btn:hover {
@@ -64,4 +54,8 @@ h1 {
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.75);
   color: rgba(255, 255, 255, 1);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }

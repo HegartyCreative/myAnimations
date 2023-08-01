@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  visibility: hidden;
+  border: 1px solid lightgrey;
+}
+
+#trainer {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#circle1 {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#circle2 {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: #97cc21;
+  border-radius: 50%;
+}
+
+#price {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+#priceFull {
+  position: absolute;
+  color: #ffffff;
+  top: 40px;
+  left: 10px;
+}
+
+#line {
+  position: absolute;
+  top: 40px;
+  left: 9px;
+  width: 42%;
+}
+
+#priceOffer {
+  position: absolute;
+  color: #97cc21;
+  top: 53px;
+  left: 11px;
+}
+
+#company {
+  position: absolute;
+  color: #000000;
+  top: 195px;
+  right: 9px;
+  z-index: 100;
+  font-size: 1.1rem;
+}
+
+#telephone {
+  position: absolute;
+  color: #000000;
+  top: 217px;
+  right: 9px;
+  z-index: 100;
+  font-size: 1rem;
+}
+
+/* Code below for the button */
+
+.btn {
+  height: 30px;
+  width: 100px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 10px;
+  z-index: 100;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#pause {
+  left: 10px;
+  top: 260px;
+}
