@@ -12,7 +12,7 @@ let amountToMove = carouselImage[0].offsetWidth;
 let pause = select("#pause");
 
 let master = gsap.timeline({
-  onComplete: () => (pause.innerHTML = "Play"),
+  onComplete: () => (pause.innerHTML = "Play & Click"),
 });
 master.pause();
 
@@ -75,5 +75,5 @@ pause.addEventListener("click", () => {
   if (master.progress() == 1) {
     master.restart();
   }
-  pause.innerHTML = master.paused() ? "Play" : "Pause";
+  pause.innerHTML = master.paused() ? "Play & Click" : "Pause";
 });

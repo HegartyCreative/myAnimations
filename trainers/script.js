@@ -11,11 +11,15 @@ const priceOffer = select("#priceOffer");
 const line = select("#line");
 const company = select("#company");
 const telephone = select("#telephone");
+const logo = select("#logo");
+const shopBtn = select("#shopBtn");
 let exitTime = 0;
 
 gsap.set(".container", { autoAlpha: 1 });
 
 let master = gsap.timeline({ paused: true });
+
+// Set point of transformOrigin
 
 master.set(trainer, {
   transformOrigin: "top center",
@@ -33,13 +37,17 @@ master.set(line, {
   transformOrigin: "bottom left",
 });
 
+master.set(shopBtn, {
+  transformOrigin: "center center",
+});
+
 // Start of animation
 
 master.to(trainer, {
   scale: 0.9,
   y: -30,
   x: 50,
-  duration: 0.75,
+  duration: 0.5,
 });
 
 master.to(
@@ -48,7 +56,7 @@ master.to(
     scale: 1.3,
     duration: 0.75,
   },
-  "-0.15"
+  "-0.25"
 );
 master.to(
   circle2,
@@ -56,17 +64,22 @@ master.to(
     scale: 1.1,
     duration: 0.75,
   },
-  "-0.15"
+  "-0.25"
 );
 
 master.from(priceFull, {
   y: -90,
   ease: "Bounce.easeOut",
+  duration: 0.5,
 });
 
-master.from(line, {
-  opacity: 0,
-});
+master.from(
+  line,
+  {
+    opacity: 0,
+  },
+  "+=0.25"
+);
 
 master.to(
   priceFull,
@@ -74,7 +87,7 @@ master.to(
     scale: 0.7,
     y: -30,
   },
-  "+=1"
+  "+=0.25"
 );
 
 master.to(
@@ -87,20 +100,29 @@ master.to(
   "<"
 );
 
-master.from(priceOffer, {
-  x: -140,
+master.from(
+  priceOffer,
+  {
+    x: -140,
+    duration: 0.25,
+  },
+  "<0.25"
+);
+
+master.from(shopBtn, {
+  scale: 0,
 });
 
-master.from(company, {
-  opacity: 0,
+master.from(logo, {
+  x: 140,
 });
 
 master.from(
-  telephone,
+  company,
   {
-    opacity: 0,
+    x: 150,
   },
-  "-=0.25"
+  "<0.25"
 );
 
 exitTime = master.duration();
